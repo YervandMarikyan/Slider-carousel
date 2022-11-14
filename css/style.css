@@ -1,0 +1,174 @@
+@charset "utf-8";
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: -webkit-pictograph;
+}
+
+main {
+	width: 95%;
+	height: 840px;
+	background: #dcd9d9;
+	margin: 10px auto;
+	position: relative;
+	padding: 5px 0;
+}
+
+main .text {
+	padding: 10px;
+	text-align: center;
+	color: rgb(40, 40, 36);
+}
+
+.text h1 {
+	font-size: 60px;
+}
+
+main header {
+	width: 98%;
+	height: 50px;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	padding: 20px;
+	justify-content: space-around;
+}
+
+header p span {
+	font-size: 60px;
+	margin: 0 15px;
+	cursor: pointer;
+	color: rgb(53, 52, 52);
+	width: 30px;
+	height: 30px;
+	display: inline-block;
+	line-height: 20px;
+	text-align: center;
+}
+
+header p span:hover {
+	background: #222;
+	color: white;
+}
+
+section {
+	width: 95%;
+	height: 600px;
+	margin: auto;
+	display: flex;
+	align-items: center;
+	overflow-x: hidden;
+}
+
+section .product {
+	min-width: 24%;
+	height: 90%;
+	background: rgb(253, 252, 252);
+	margin: 0 20px 0 0;
+	border-radius: 30px;
+	position: relative;
+	left: 0;
+	transition: 0.5s;
+
+}
+
+.detail span {
+	font-weight: 900;
+}
+
+.detail .ava {
+	font-weight: 10;
+	font-size: 17px;
+}
+
+picture {
+	width: 100%;
+	height: auto;
+	padding: 20px;
+	display: flex;
+	overflow: hidden;
+	margin-bottom: 20px;
+}
+
+picture img {
+	width: 80%;
+}
+
+.detail,
+.button {
+	width: 90%;
+	margin: auto;
+	padding: 5px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 50px;
+	font-size: 20px;
+	color: #444;
+}
+
+a {
+	text-decoration: none;
+	padding: 6px 14px;
+	font-size: 14px;
+	margin: 5px 0 0 20px;
+	display: inline-block;
+	background: #6773ff;
+	color: rgb(234, 231, 231);
+}
+
+p.star {
+	margin: 5px auto;
+	width: 65%;
+	font-size: 30px;
+	color: #808080;
+}
+@media (max-width:1024px) {
+
+	section .product {
+	    min-width: 49%;
+		margin: 0 10px 0 0;
+		
+	}
+}
+
+@media (max-width:768px) {
+	.text h1 {
+		font-size: 35px;
+	}
+
+	header h1 {
+		font-size: 25px;
+	}
+
+	header p span {
+		font-size: 30px;
+	}
+
+	section .product {
+		min-width: 99%;
+		margin: 0 10px 0 0;
+	}
+
+	.detail,
+	.button {
+		font-size: 16px;
+	}
+
+	a {
+		padding: 6px 10px;
+	}
+}
+
+.fadeOut {
+	opacity: 0;
+	transition: opacity 0.3 ease-in-out;
+	opacity: 1;
+}
+
+.fadeIn {
+	opacity: 1;
+	transition: opacity 0.3 ease-in;
+}
